@@ -663,9 +663,9 @@ section {
 .footer-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #282d32;
   padding: 1rem;
   width: 100%;
 }
@@ -684,6 +684,8 @@ section {
 
 .social-list li {
   margin-right: 1.5rem;
+  padding: 0;
+  text-align: center;
 }
 
 .social-list li:nth-last-child() {
@@ -691,7 +693,35 @@ section {
 }
 
 .social-list li a {
-  font-size: 1.8rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  transition: var(--general-transition);
+}
+
+.icon-twitter {
+  height: 2rem;
+  width: 2rem;
+}
+.icon-github {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-instagram {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-linkedin {
+  height: 2rem;
+  width: 2rem;
 }
 
 .social-list li:nth-child(1) a {
@@ -699,15 +729,31 @@ section {
 }
 
 .social-list li:nth-child(2) a {
-  color: #333;
+  color: #4078c0;
 }
 
 .social-list li:nth-child(3) a {
   color: #833ab4;
 }
 
+.social-list li:nth-child(4) a {
+  color: #0077B5;
+}
+
+.social-list li a:hover {
+  background-color: var(--primary-color);
+
+}
+
 .i-back-top {
+  height: 3rem;
+  width: 3rem;
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--primary-color);
+}
+
+.i-back-top:hover {
+color: var(--hover-color);
+transform: translateY(-5px);
 }
 
