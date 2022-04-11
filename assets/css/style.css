@@ -284,7 +284,7 @@ section {
 }
 
 .about-skills {
-  width: 270px;
+  width: 280px;
 }
 
 .about-skills h3 {
@@ -308,12 +308,13 @@ section {
 }
 
 .frontend-developer-statement h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 .frontend-developer-statement p {
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .frontend-developer-skill {
@@ -325,7 +326,11 @@ section {
 }
 
 .frontend-developer-skill div {
-  margin-left: 1.5rem;
+  padding-left: 2rem;
+}
+
+.frontend-developer-skill div span {
+  font-size: 1.4rem;
 }
 
 .icon-frontent-title,
@@ -341,6 +346,27 @@ section {
   font-size: 2.2rem;
 }
 
+.html-usage {
+  margin-top: 5px;
+  width: 90px;
+  background-color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+.css-usage {
+  margin-top: 5px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+.js-usage {
+  margin-top: 5px;
+  width: 20px;
+  background-color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
 
 /* Mobile App Developer Skills*/
 
@@ -354,12 +380,15 @@ section {
 }
 
 .mobile-app-developer-statement h4 {
-  font-size: 1.4rem;
+  flex-wrap: nowrap;
+  font-size: 1.6rem;
   font-weight: 500;
+
 }
 
 .mobile-app-developer-statement p {
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .mobile-app-developer-skills {
@@ -376,11 +405,29 @@ section {
 }
 
 .mobile-app-developer-skill div {
-  margin-left: 1.5rem;
+  padding-left: 2rem;
+}
+
+.mobile-app-developer-skill div span {
+  font-size: 1.4rem;
 }
 
 .icon-android {
   font-size: 2.2rem;
+}
+
+.java-usage {
+  margin-top: 5px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+.react-usage {
+  margin-top: 5px;
+  width: 30px;
+  background-color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
 }
 
 
@@ -409,7 +456,7 @@ section {
 
 .education-title h3,
 .work-title h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-left: .5rem;
 }
@@ -432,6 +479,11 @@ section {
   align-items: center;
   flex-direction: row;
   margin-bottom: 1rem;
+}
+
+.education-statement p,
+.work-statement p {
+  font-size: 1.4rem;
 }
 
 /* Custom Button */
