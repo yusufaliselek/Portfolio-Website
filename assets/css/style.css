@@ -173,6 +173,17 @@ section {
 
 /* Custom CSS */
 
+/*DropDown*/
+
+.drop-down-inactive {
+  display: none;
+}
+
+.drop-down-1,
+.drop-down-2 {
+  cursor: pointer;
+}
+
 /* Navbar */
 
 .nav {
@@ -406,6 +417,10 @@ section {
   padding-bottom: 1rem;
 }
 /* FrontEnd Developer Skills */
+.frontend-developer {
+  padding-bottom: 1rem;
+}
+
 .frontend-developer-skills {
   padding-bottom: 2rem;
   padding-left: 1rem;
