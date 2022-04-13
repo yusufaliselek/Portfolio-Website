@@ -980,7 +980,9 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 1rem;
   }
+  
   .about-title h1{
     font-size: 3rem;
   }
