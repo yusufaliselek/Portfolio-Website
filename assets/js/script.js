@@ -20,14 +20,14 @@ const dropDownMenu = () => {
   const mobileDevSkills = document.querySelector(".mobile-app-developer-skills");
 
   dropDown1.addEventListener("click", () => {
-    frondendDevSkills.classList.toggle("drop-down-inactive");
-    dropDown1.classList.toggle("chevron-down");
+    frondendDevSkills.classList.toggle("drop-down-active");
+    dropDown1.classList.toggle("chevron-rotate");
     /*dropDown1.setAttribute("data-icon","akar-icons:chevron-down");*/
   });
 
   dropDown2.addEventListener("click", () => {
-    mobileDevSkills.classList.toggle("drop-down-inactive");
-    dropDown2.classList.toggle("chevron-down");
+    mobileDevSkills.classList.toggle("drop-down-active");
+    dropDown2.classList.toggle("chevron-rotate");
   });
 
 };

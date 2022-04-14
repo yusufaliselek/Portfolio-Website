@@ -173,20 +173,7 @@ section {
 
 /* Custom CSS */
 
-/*DropDown*/
 
-.drop-down-inactive {
-  display: none;
-}
-
-.drop-down-1,
-.drop-down-2 {
-  cursor: pointer;
-}
-
-.chevron-down {
-  transform: rotate(180deg);
-}
 
 /* Navbar */
 
@@ -346,17 +333,13 @@ section {
   text-align: center;
 }
 
-.iconify {
-  transition: var(--general-transition);
-}
-
 .icon-mouse {
   font-size: 40px;
   animation: float 2s ease-in-out infinite;
 }
 
 .ri-mouse-line {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @keyframes float {
@@ -364,7 +347,7 @@ section {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(7px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
@@ -426,16 +409,14 @@ section {
 }
 
 .frontend-developer-skills {
+  display: none;
+  flex-direction: column;
   padding-bottom: 2rem;
   padding-left: 1rem;
 }
 .frontend-developer-title {
   display: flex;
   justify-content: space-between;
-}
-
-.frontend-developer-title div {
-  margin-right: 2.5rem;
 }
 
 .frontend-developer-statement h4 {
@@ -447,6 +428,48 @@ section {
   text-align: center;
   font-size: 1.4rem;
 }
+
+/*DropDown*/
+
+.drop-down-active {
+  display: flex !important;
+  animation: drop-down-list-animation 0.5s ease-in-out;
+}
+
+.drop-down-1,
+.drop-down-2 {
+  cursor: pointer;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chevron-rotate {
+  animation: drop-down-chevron-animation 0.5s ease-in-out;
+  transform: rotate(0deg);
+}
+
+@keyframes drop-down-list-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drop-down-chevron-animation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* End DropDown*/
 
 .frontend-developer-skill {
   display: flex;
@@ -465,14 +488,14 @@ section {
 }
 
 .icon-frontent-title,
-.icon-mobile-title,
-.chevron-up {
+.icon-mobile-title{
   font-size: 2.2rem;
 }
 
 .icon-html,
 .icon-js,
-.icon-css {
+.icon-css,
+.chevron-up {
   font-size: 2.2rem;
 }
 
@@ -504,10 +527,6 @@ section {
   justify-content: space-between;
 }
 
-.mobile-app-developer-title div {
-  margin-right: 2.5rem;
-}
-
 .mobile-app-developer-statement h4 {
   flex-wrap: nowrap;
   font-size: 1.6rem;
@@ -520,6 +539,8 @@ section {
 }
 
 .mobile-app-developer-skills {
+  display: none;
+  flex-direction: column;
   padding-bottom: 2rem;
   padding-left: 1rem;
 }
