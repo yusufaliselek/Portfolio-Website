@@ -184,6 +184,10 @@ section {
   cursor: pointer;
 }
 
+.chevron-down {
+  transform: rotate(180deg);
+}
+
 /* Navbar */
 
 .nav {

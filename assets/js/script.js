@@ -21,11 +21,13 @@ const dropDownMenu = () => {
 
   dropDown1.addEventListener("click", () => {
     frondendDevSkills.classList.toggle("drop-down-inactive");
+    dropDown1.classList.toggle("chevron-down");
     /*dropDown1.setAttribute("data-icon","akar-icons:chevron-down");*/
   });
 
   dropDown2.addEventListener("click", () => {
     mobileDevSkills.classList.toggle("drop-down-inactive");
+    dropDown2.classList.toggle("chevron-down");
   });
 
 };
